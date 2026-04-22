@@ -75,7 +75,7 @@
     "id": "analytics-dashboard",
     "name": "Analytics Dashboard",
     "description": "Comprehensive analytics dashboard with data visualization, KPIs, and business intelligence",
-    "repository": "https://github.com/scalixworld/scalix/scaffold-templates-analytics-dashboard.git",
+    "repository": "https://github.com/scalixworld/template-analytics-dashboard.git",
     "branch": "main",
     "tags": ["analytics", "dashboard", "data", "visualization", "business", "intelligence", "charts", "metrics"],
     "postInstall": [
