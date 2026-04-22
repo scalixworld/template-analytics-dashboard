@@ -22,7 +22,7 @@ import {
   ScatterChart,
   Scatter
 } from 'recharts'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ChartConfig } from "../../types/analytics"
 import { generateColorPalette, formatDate } from "../../lib/utils"
 
@@ -210,12 +210,7 @@ export function ChartComponent({ config, className }: ChartComponentProps) {
   return (
     <Card className={className}>
       <CardHeader>
-        <CardTitle>{config.title}</CardTitle>
-        {config.title !== config.title.toLowerCase() && (
-          <CardDescription>
-            {config.title.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())}
-          </CardDescription>
-        )}
+        <CardTitle className="text-base font-semibold">{config.title}</CardTitle>
       </CardHeader>
       <CardContent>
         <ResponsiveContainer width="100%" height={config.height || 300}>
